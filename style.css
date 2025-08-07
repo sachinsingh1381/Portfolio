@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header{
+    background-image: url(./img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100vw 100vh;
+    
+}
+nav{
+  width: 100vw;
+  height: 8vh;
+  border-top-left-radius: 10em;
+  border-top-right-radius: 10em;
+  border-bottom-left-radius: 10em;
+  border-bottom-right-radius: 10em;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e5d0cc;
+  position: sticky;
+  top: 0;
+}
+.btn button {
+  font-size: 1.3rem;
+  font-weight: 900;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  color: #ffffff;
+  background-color: #4a4a4a;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.name {
+  font-size: 6rem;
+  height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
