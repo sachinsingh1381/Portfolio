@@ -10,7 +10,9 @@
             margin: 0;
             padding: 0;
         }
-
+        html{
+            scroll-padding-top: 8vh;
+        }
         .main {
             box-sizing: border-box;
             width: 100%;
@@ -29,56 +31,77 @@
             background-color: #e5d0cc;
             position: sticky;
             top: 0;
+            z-index: 1000;
         }
 
-        .nav button {
-            font-size: 1.3rem;
-            font-weight: 900;
-            padding: 0.5rem;
-            border-radius: 1rem;
-            border: none;
-            color: #ffffff;
-            cursor: pointer;
-            background-color: #4a4a4a;
-            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        a {
+            padding: 0.7rem;
+            color: black;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
         }
 
-        .name {
-            font-size: 6rem;
-            height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 20rem;
+            transition: all 0.3s ease-out;
         }
 
-        .frist {
+        .pg1 {
             background-image: url(./img1.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 92vh;
             width: 100%;
+            height: 92vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .second {
+        /* Name Section with Blur */
+        .name {
+            color: black;
+            font-size: 6rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 10px 15px 5px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(2px);
+            width: 100%;
+            height: 92vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pg2,
+        .pg3,
+        .pg4 {
             width: 100%;
             height: 92vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             justify-content: space-evenly;
             align-items: center;
-            background-image: url(./img2.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            text-align: center;
         }
-        .second h1 {
-            font-size: 10rem;
+
+        .pg2 h1,
+        .pg3 h1,
+        .pg4 h1 {
+            font-size: 5rem;
         }
-        .second p {
+
+        .pg2 p {
             padding: 3rem;
             font-size: 2rem;
+        }
+
+        .pg3 ol {
+            padding: 3rem;
+            font-size: 2rem;
+            text-align: left;
         }
     </style>
 </head>
@@ -87,30 +110,45 @@
     <div class="main">
 
         <div class="nav">
-            <a href="">HOME</a>
-            <a href="#about">About Me</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT ME</a>
+            <a href="#project">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
         </div>
-        <div class="frist">
+
+        <div class="pg1" id="home">
             <div class="name">
                 <h1>SACHIN SINGH</h1>
             </div>
         </div>
-        <div class="second">
+
+        <div class="pg2">
             <h1 id="about">ABOUT ME</h1>
-            <p> Hello! I'm <strong>Sachin Singh</strong>, a passionate and detail-oriented Software Developer with a
+            <p>Hello! I'm <strong>Sachin Singh</strong>, a passionate and detail-oriented Software Developer with a
                 strong foundation in web development and problem-solving. I specialize in building responsive and
                 efficient web applications using modern technologies like HTML, CSS, JavaScript, React, Node.js, and
-                MySQL.I enjoy turning complex problems into simple, user-friendly solutions. Whether working on the
+                MySQL. I enjoy turning complex problems into simple, user-friendly solutions. Whether working on the
                 frontend or backend, I aim to write clean, maintainable code and deliver high-quality
-                projects.Currently, I’m focused on learning new technologies, contributing to real-world projects, and
+                projects. Currently, I’m focused on learning new technologies, contributing to real-world projects, and
                 continuously improving my skills to grow as a full-stack developer.</p>
         </div>
 
+        <div class="pg3">
+            <h1 id="project">PROJECTS</h1>
+            <ol type="I">
+                <li>Personal Portfolio Website – Showcase your resume, projects, and contact form</li>
+                <li>Weather App – Fetch weather data using a public API.</li>
+                <li>To-Do List App – Simple CRUD functionality with local storage or backend.</li>
+                <li>Quiz App – Timed multiple-choice quizzes with a score tracker.</li>
+                <li>Recipe Finder – Search recipes via an external API (like Spoonacular).</li>
+            </ol>
+        </div>
 
-
-
+        <div class="pg4">
+            <h1 id="contact">CONTACT</h1>
+            <p>Email: your-email@example.com</p>
+            <p>Phone: +91 12345 67890</p>
+        </div>
 
     </div>
 </body>
