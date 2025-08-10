@@ -8,154 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-padding-top: 8vh;
-            background-color: pink;
-        }
-
-        .main {
-            box-sizing: border-box;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .nav {
-            width: 100%;
-            height: 8vh;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #e5d0cc;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        a {
-            padding: 0.7rem;
-            color: black;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.2rem;
-        }
-
-        a:hover {
-            color: white;
-            background-color: black;
-            border-radius: 20rem;
-            transition: all 0.3s ease-out;
-        }
-
-        .pg1 {
-            background-image: url(./img1.jpg);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 92vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .name {
-            color: black;
-            font-size: 4rem;
-            font-family: Arial, Helvetica, sans-serif;
-            text-shadow: 10px 15px 5px rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(2px);
-            width: 100%;
-            height: 92vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .content {
-            display: flex;
-            align-items: center;
-        }
-
-        .but {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .but button {
-            font-size: 20px;
-            padding: 10px;
-            border-radius: 10px;
-            background-color: black;
-            color: pink;
-            font-weight: bold;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        button:hover {
-            padding: 10px;
-            color: white;
-            border: none;
-        }
-
-        img {
-            box-shadow: 10px 5px 5px rgb(97, 100, 100);
-        }
-
-        .pg2,
-        .pg3,
-        .pg4 {
-            margin: 45px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .pg2 h1,
-        .pg3 h1,
-        .pg4 h1 {
-            font-size: 5rem;
-        }
-
-        .pg2 p {
-            padding: 3rem;
-            font-size: 30px;
-        }
-
-        .pg3 ol {
-            padding-left: 20px;
-            font-size: 25px;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        ol li {
-            padding-left: 2rem;
-        }
-
-        .icon {
-            margin-left: 400px;
-            display: flex;
-            gap: 90px;
-        }
-
-        .icon a {
-            font-size: 3rem;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -170,7 +23,11 @@
 
         <div class="pg1" id="home">
             <div class="name">
-                <h1>SACHIN SINGH</h1>
+                <h1>
+                    <marquee behavior="scroll" direction="left">
+                        Sachin Singh
+                    </marquee>
+                </h1>
             </div>
         </div>
 
@@ -216,13 +73,17 @@
 
         <div class="pg4">
             <h1 id="contact">CONNECT</h1>
-           <div class="content"> <div><img src="./pexels-lolarussian-3679490-removebg-preview.png" height="500px"></div>
-            <div class="icon">
-                <a href="mailto:sachin8174056@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                <a href="tel:+918174056070" onclick="throw"><i class="fa-solid fa-phone-volume"></i></a>
-                <a href="https://www.linkedin.com/in/sachin-singh-758658257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/sachinsingh1381"><i class="fa-brands fa-github"></i></a>
-            </div></div>
+            <div class="content">
+                <div><img src="./pexels-lolarussian-3679490-removebg-preview.png" height="500px"></div>
+                <div class="icon">
+                    <a href="mailto:sachin8174056@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+918174056070" onclick="throw"><i class="fa-solid fa-phone-volume"></i></a>
+                    <a
+                        href="https://www.linkedin.com/in/sachin-singh-758658257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sachinsingh1381"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
         </div>
 
     </div>
