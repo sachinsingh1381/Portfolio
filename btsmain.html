@@ -22,7 +22,7 @@
         }
 
         footer {
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -30,38 +30,38 @@
 </head>
 
 <body>
-
     <!-- Bootstrap Navbar for Portfolio -->
-    <div class="container-fluid bg-dark px-5 position-sticky top-0" style=" z-index: 9999;>
+    <div class="container-fluid bg-dark px-5 position-sticky top-0" style="z-index: 9999;">
+
         <nav class=" navbar navbar-expand-lg navbar-dark d-flex justify-content-between align-items-center w-100 py-2">
 
-        <!-- Brand / Logo -->
-        <a class="navbar-brand fw-bold fs-4" href="#">PORTFOLIO</a>
+            <!-- Brand / Logo -->
+            <a class="navbar-brand fw-bold fs-4" href="#">PORTFOLIO</a>
 
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarLinks">
-            <ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
-                <li class="nav-item">
-                    <a class="nav-link fw-bold text-white" href="#about">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold text-white" href="#skills">SKILLS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold text-white" href="#projects">PROJECTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold text-white" href="#resume">RESUME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold text-white" href="#contact">CONTACT</a>
-                </li>
-                <!-- Hire Me Button -->
-                <li class="nav-item">
-                    <a class="btn btn-warning rounded-pill fw-bold" href="#contact">HIRE ME</a>
-                </li>
-            </ul>
-        </div>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarLinks">
+                <ul class="navbar-nav ms-auto d-flex align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-white" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-white" href="#skills">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-white" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-white" href="#resume">RESUME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text-white" href="#contact">CONTACT</a>
+                    </li>
+                    <!-- Hire Me Button -->
+                    <li class="nav-item">
+                        <a class="btn btn-warning rounded-pill fw-bold" href="#contact">HIRE ME</a>
+                    </li>
+                </ul>
+            </div>
 
         </nav>
     </div>
@@ -216,7 +216,7 @@
                         style="height: 250px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Project One</h5>
-                        <p class="card-text">A responsive web app built with HTML, CSS, and JavaScript.</p>
+                        <p class="card-text">A responsive web app built with HTML, CSS.</p>
                         <a href="#" class="btn btn-warning w-100">View Project</a>
                     </div>
                 </div>
@@ -284,7 +284,7 @@
                     <ul class="list-unstyled">
                         <li class="mb-3">
                             <h5 class="fw-bold">Full Stack Developer Intern</h5>
-                            <p>Company Name, June 2024 - August 2024</p>
+                            <p><span class="fw-bold text-warning">GeeksforGeeks</span>, June 2024 - August 2024</p>
                             <p>Worked on creating responsive web apps using React, Node.js, and Bootstrap.</p>
                         </li>
                         <li class="mb-3">
@@ -349,7 +349,7 @@
     </div>
 
     <!-- Back to Top Button -->
-    <a href="#top" class="position-fixed bottom-0 end-0 m-3 btn btn-warning rounded-circle shadow-lg p-3">
+    <a href="#top" class="position-fixed bottom-0 end-0 m-3 btn btn-warning rounded-circle shadow-lg p-3" style="z-index: 99;">
         <i class="bi bi-arrow-up fs-5"></i>
     </a>
 
